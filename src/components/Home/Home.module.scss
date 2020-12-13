@@ -1,0 +1,15 @@
+@import '../../assets/style/variables';
+
+.layout {
+    background: $grey;
+}
+
+.wrapper {
+    max-width: 1030px;
+    margin: 40px auto;
+    padding: 0 20px;
+
+    @media (min-width: 1060px) {
+        padding: 0;
+    }
+}
