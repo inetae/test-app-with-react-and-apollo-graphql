@@ -1,1 +1,12 @@
-# test-app-with-react-and-apollo-graphql
+# Test Eneba app
+
+### How to start
+1. npm i
+2. npm run start 
+
+-------------------------------------------
+
+### How to build and start
+1. npm i
+2. npm run build
+3. npm run serve
