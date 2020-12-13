@@ -70,16 +70,16 @@ const Header = () => {
                                     MENU
                                 </text>
                             </svg>
-                            <a href="#" className={style.link} onClick={() => setIsOpen(false)}>
+                            <a href="#" className={style.link} onClick={() => {setIsOpen(false); removeOverflowHidden()}}>
                                 Projects
                             </a>
-                            <a href="#" className={style.link} onClick={() => setIsOpen(false)}>
+                            <a href="#" className={style.link} onClick={() => {setIsOpen(false); removeOverflowHidden()}}>
                                 About Us
                             </a>
-                            <a href="#" className={style.link} onClick={() => setIsOpen(false)}>
+                            <a href="#" className={style.link} onClick={() => {setIsOpen(false); removeOverflowHidden()}}>
                                 Testimonials
                             </a>
-                            <a href="#" className={style.link} onClick={() => setIsOpen(false)}>
+                            <a href="#" className={style.link} onClick={() => {setIsOpen(false); removeOverflowHidden()}}>
                                 Contacts
                             </a>
                         </nav>

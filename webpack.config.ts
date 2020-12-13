@@ -95,8 +95,8 @@ const config = {
         }),
         new webpack.HotModuleReplacementPlugin(),
         new MiniCssExtractPlugin({
-            filename: isDevelopmentMode ? '[name].css' : '[name].[hash].css',
-            chunkFilename: isDevelopmentMode ? '[id].css' : '[id].[hash].css',
+            filename: isDevelopmentMode ? '[name].css' : '[name].[fullhash].css',
+            chunkFilename: isDevelopmentMode ? '[id].css' : '[id].[fullhash].css',
         }),
         new CopyPlugin({
             patterns: [{ from: './src/assets/fonts', to: 'build/fonts' }],
