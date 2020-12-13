@@ -1,0 +1,37 @@
+@import '../../assets/style/variables';
+
+.contentWrapper {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    margin: 0 0 40px;
+
+    @media (min-width: 768px) {
+        width: 60%;
+        margin: 0;
+    }
+
+    @media (min-width: 992px) {
+        width: 70%;
+    }
+}
+
+.content {
+  border: 1px solid $borderGrey;
+  background: #fff;
+  padding: 20px;
+
+  & + .content {
+    margin: 40px 0 0;
+  }
+}
+
+.link {
+  color: $pink;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: darken($pink, 20%);
+  }
+}
