@@ -1,4 +1,4 @@
-# Test Eneba app
+# Test React Typescript and Graphql app
 
 ### How to start
 1. npm i

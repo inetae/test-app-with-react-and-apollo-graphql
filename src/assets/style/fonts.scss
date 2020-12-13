@@ -1,0 +1,24 @@
+$fontPath: '../fonts';
+
+@font-face {
+    font-family: 'Quantico Regular';
+    font-style: normal;
+    font-weight: 300;
+    src: url('#{$fontPath}/Quantico-Regular.eot') format('eot');
+    src: local('Quantico Regular'), local('Quantico Regular'),
+        url('#{$fontPath}/Quantico-Regular.eot?#iefix') format('embedded-opentype'),
+        url('#{$fontPath}/Quantico-Regular.woff2') format('woff2'),
+        url('#{$fontPath}/Quantico-Regular.woff') format('woff'),
+        url('#{$fontPath}/Quantico-Regular.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Quantico Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: url('#{$fontPath}/Quantico-Bold.eot') format('eot');
+    src: local('Quantico Bold'), local('Quantico Bold'), url('#{$fontPath}/Quantico-Bold.woff2') format('woff2'),
+        url('#{$fontPath}/Quantico-Bold.woff') format('woff'), url('#{$fontPath}/Quantico-Bold.ttf') format('truetype');
+    font-display: swap;
+}
