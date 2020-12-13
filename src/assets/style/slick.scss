@@ -93,6 +93,13 @@
         display: block;
         height: auto;
     }
+
+    div {
+        &:focus,
+        &:active {
+            outline: none;
+        }
+    }
 }
 
 .slick-arrow.slick-hidden {

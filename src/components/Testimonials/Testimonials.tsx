@@ -4,7 +4,7 @@ import Slider from 'react-slick';
 import { Testimonial } from 'constants/interfaces';
 import { CommentsQuery } from 'queries/CommentsQuery';
 import style from './Testimonials.module.scss';
-import 'components/Slider/Slick.scss';
+import 'assets/style/slick.scss';
 
 const Testimonials = () => {
     const slider = useRef<any>(null);

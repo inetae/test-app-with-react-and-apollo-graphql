@@ -27,10 +27,11 @@
     "typescript": "^4.1.2"
   },
   "scripts": {
-    "start": "webpack serve --mode development --progress --watch && node src/api src/api/test.js ",
-    "start:server": "nodemon -r esm src/api/test.ts",
+    "start": "concurrently -k npm:start:*",
+    "start:server": "node -r esm src/api/server.js",
+    "start:web": "webpack serve --mode development",
     "serve": "concurrently -k npm:serve:*",
-    "serve:app": "node -r esm src/api/test.js",
+    "serve:app": "node -r esm src/api/server.js",
     "serve:api": "http-server ./build -p 9001",
     "build": "webpack --config webpack.config.ts",
     "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
