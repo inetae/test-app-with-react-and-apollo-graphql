@@ -1,0 +1,14 @@
+@import '../../assets/style/variables';
+
+.sidebarWrapper {
+    @media (min-width: 768px) {
+        width: 40%;
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 20px;
+    }
+
+    @media (min-width: 992px) {
+        width: 30%;
+    }
+}
