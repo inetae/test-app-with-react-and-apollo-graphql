@@ -10,13 +10,13 @@ interface Props {
     default?: boolean;
 }
 
+const HomePage = ({}: RouteComponentProps) => <Home />;
+const NotFound = ({}: Props) => <NotFoundPage />;
+
 const client: ApolloClient<InMemoryCache | NormalizedCacheObject> = new ApolloClient({
     cache: new InMemoryCache(),
     uri: process.env.API_URL,
 });
-
-const HomePage = ({}: RouteComponentProps) => <Home />;
-const NotFound = ({}: Props) => <NotFoundPage />;
 
 const App = () => (
     <ApolloProvider client={client}>

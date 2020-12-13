@@ -1,4 +1,4 @@
-# Test React Typescript and Graphql app
+# Test React and Graphql Apollo app
 
 ### How to start
 1. npm i
